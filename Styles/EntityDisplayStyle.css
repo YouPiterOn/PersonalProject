@@ -1,0 +1,152 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.headerText {
+    margin: 0px;
+}
+
+.headerButton {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid white;
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 7px;
+    font-size: medium;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.headerButton:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#imgDisplay{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+#leftArrow{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    transform: scale(-1, -1);
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+#leftArrow:hover{
+    opacity: .5;
+}
+
+#rightArrow{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+#rightArrow:hover{
+    opacity: .5;
+}
+
+#entity-img {
+    width: 600px;
+    height: 600px; 
+    object-fit:contain;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+ul#entity-tags {
+    margin-top: 5px;
+    list-style-type: none;
+}
+
+#entity-tags li {
+    display: inline-block;
+    margin-right: 5px;
+    border: 2px solid darkblue;
+    background-color: white;
+    color: darkblue;
+    padding: 2px 10px;
+    border-radius: 7px;
+}
+
+#entity-name {
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+#buyArea {
+    margin-top: 15px;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px;
+}
+
+#entity-price {
+    font-size: 24px;
+    height: 100%;
+    line-height: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+#addToCart {
+    background-color: darkblue;
+    color: white;
+    border: 2px solid darkblue;
+    height: fit-content;
+    border-radius: 7px;
+    font-size: medium;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+#addToCart:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+#entity-description {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: darkblue;
+    height: 80px; 
+    margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Styles/EntityDisplayStyle.css" />
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <h1 class="headerText">MyShop</h1>
+            <button id="homeButton" class="headerButton" onclick="{window.location.href = 'Index.html';}">Home</button>
+            <button in="scartButton" class="headerButton" onclick="{window.location.href = 'ShoppingCart.html';}">Shopping Cart</button>
+        </header>
+        <div class="main">
+            <div id="imgDisplay">
+                <img id="leftArrow" onclick="previousImg();" src="Images/arrow.png">
+                <img id="entity-img" src="" alt="Entity Image">
+                <img id="rightArrow" onclick="nextImg();" src="Images/arrow.png">
+            </div>
+            <div id="info">
+                <h1 id="entity-name"></h1>
+                <ul id="entity-tags"></ul>
+                <div id="buyArea">
+                    <p id="entity-price"></p>
+                    <button id="addToCart" onclick="addItemToShoppingCart();">Add to shopping cart</button>
+                </div>
+                <p id="entity-description"></p>
+            </div>
+        </div>
+        <footer></footer>
+
+        <script src="Scripts/EntityDisplayScript.js"></script>
+    </body>
+</html>

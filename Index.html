@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Styles/IndexStyle.css" />
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/lodash/lodash.min.js"></script>
+        <title></title>
+    </head>
+    <body style="width: 100%; margin: 0px;">
+        <header>
+            <h1 class="headerText">MyShop</h1>
+            <button id="homeButton" onclick="{window.location.href = 'Index.html';}" class="headerButton">Home</button>
+            <button in="scartButton" class="headerButton" onclick="{window.location.href = 'ShoppingCart.html';}">Shopping Cart</button>
+        </header>
+        <div id="main">
+
+            <div id="sidebar">
+                <h3 class="heading">Filters</h3>
+                <form id="filters">
+                    
+                </form>
+            </div>
+            <div id="displayArea">
+                <h1 class="heading" id="section">Catalog</h1>
+                <div id="entitiesDisplay">
+                    
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+        <script src="Scripts/IndexScript.js"></script>
+    </body>
+</html>

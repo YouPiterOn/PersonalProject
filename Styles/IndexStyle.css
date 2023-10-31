@@ -1,0 +1,202 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.headerText {
+    margin: 0px;
+}
+
+.headerButton {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid white;
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 7px;
+    font-size: medium;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.headerButton:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+#filters {
+    display: flex; 
+    flex-direction: column;
+    gap:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.formField {
+    position: relative;
+    display: block;
+}
+.formField input {
+    position: absolute;
+    opacity: 0;
+}
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    height: 12.5px;
+    width: 12.5px;
+    background-color: #eee;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+.custom-checkbox:hover {
+    background-color: white;
+}
+
+.formField input:checked ~ .custom-checkbox {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.custom-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.formField input:checked ~ .custom-checkbox:after {
+    display: block;
+}
+
+.formField .custom-checkbox:after {
+    left: 4px; 
+    top: 2px;
+    width: 2.5px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+}
+
+.formText {
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.heading{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar{
+    background-color: rgb(228, 228, 228);
+    width: 150px;
+    min-width: max-content;
+    min-height: 500px;
+}
+
+#displayArea{
+    width: 85%;
+    margin: auto;
+    margin-left: 10px;
+}
+
+#entitiesDisplay{
+    width: fit-content;
+    margin: auto;
+    max-width: 100%;
+    min-width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    display: flex;
+}
+
+.entity{
+    width: 250px;
+    height: 225px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    margin: 10px;
+    background-color: #eeeeee;
+    display:flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.entity:hover{
+    border: 2px solid darkblue;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.entityImage{
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 230px;
+    height: 175px;
+    object-fit: cover;
+}
+
+.name{
+    margin:0px;
+    margin-left: 15px;
+}
+.price{
+    margin:0px;
+    margin-left: 15px;
+}
+.error-message {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: auto;
+    width: 200px;
+    height: 75px;
+    padding-top: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton {
+    background-color: darkblue;
+    color: rgb(228, 228, 228);
+    border: 2px solid darkblue;
+    height: fit-content;
+    border-radius: 7px;
+    font-size: medium;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: rgb(228, 228, 228);
+    color: darkblue;
+}
+
+footer {
+    background-color: darkblue;
+    height: 80px;
+}

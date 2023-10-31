@@ -1,0 +1,92 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.headerText {
+    margin: 0px;
+}
+
+.headerButton {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid white;
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 7px;
+    font-size: medium;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.headerButton:hover {
+    background-color: darkblue;
+    color: white;
+}
+#cartList{
+    min-height: 600px;
+}
+
+.cartItem {
+    display: flex;
+    border-bottom: 1px solid darkblue;
+    padding: 10px;
+}
+
+.itemImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit:contain;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name, .price {
+    color: darkblue;
+    margin: 0;
+    font-weight: bold;
+}
+
+.name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.removeButton {
+    background-color: darkblue;
+    border: 2px solid darkblue;
+    color: white;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: auto;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+footer {
+    background-color: darkblue;
+    height: 80px;
+}
