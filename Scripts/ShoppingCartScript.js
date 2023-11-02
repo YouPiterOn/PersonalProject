@@ -38,6 +38,16 @@ function displayShoppingCart() {
         cartItem.append(itemImg, infoDiv, removeButton);
         cartList.append(cartItem);
     });
+    const cartItem = $("<li>").addClass("cartItem");
+    const buyButton = $("<button>").attr('id', "buyButton").text("Buy All");
+    buyButton.on("click", function() {
+        if(shoppingCartData.length != 0){
+            window.location.href = 'BuyScreen.html';
+        }
+    });
+    console.log(buyButton);
+    cartItem.append(buyButton);
+    cartList.append(cartItem);
 }
 
 
